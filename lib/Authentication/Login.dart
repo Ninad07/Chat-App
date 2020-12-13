@@ -223,7 +223,7 @@ class _AuthState extends State<Auth> {
                               child: Center(
                                   child: islogged
                                       ? SpinKitCircle(
-                                          size: 20,
+                                          size: 25,
                                           color: Colors.white,
                                         )
                                       : Text("Login"))),
@@ -333,11 +333,6 @@ class _AuthState extends State<Auth> {
                               );
                               //AppToast("No Credentials found");
                             }
-
-                            /*Navigator.push(context,
-                                MaterialPageRoute(builder: (context) {
-                              return Profile();
-                            }));*/
                           })),
                   SizedBox(
                     height: 60,
@@ -909,7 +904,7 @@ class _ContinueWithTheProfileState extends State<ContinueWithTheProfile> {
                               child: Center(
                                   child: iscont
                                       ? SpinKitCircle(
-                                          size: 15,
+                                          size: 25,
                                           color: Colors.white,
                                         )
                                       : Text(
@@ -984,7 +979,7 @@ class _ContinueWithTheProfileState extends State<ContinueWithTheProfile> {
                               print("DONE*********************************");
 
                               setState(() {
-                                iscont = true;
+                                iscont = false;
                               });
                               Navigator.push(context,
                                   MaterialPageRoute(builder: (context) {
@@ -992,7 +987,7 @@ class _ContinueWithTheProfileState extends State<ContinueWithTheProfile> {
                               }));
                             } catch (e) {
                               setState(() {
-                                iscont = true;
+                                iscont = false;
                               });
                               print(e);
                             }
