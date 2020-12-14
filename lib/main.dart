@@ -32,6 +32,6 @@ class App extends StatelessWidget {
             pageTransitionType: PageTransitionType.scale,
             //splashTransition: null,
             //pageTransitionType: PageTransitionType.leftToRightWithFade,
-            backgroundColor: Colors.blue));
+            backgroundColor: Colors.white));
   }
 }
